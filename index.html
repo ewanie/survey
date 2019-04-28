@@ -41,47 +41,72 @@
         <fieldset>
             <p>How would you describe your satisfaction with our services?</p>
             <label for='satisfied'>very satisfied</label>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
+            <input name='services' type='radio' value='5'>
+            <input name='services' type='radio' value='4'>
+            <input name='services' type='radio' value='3'>
+            <input name='services' type='radio' value='2'>
+            <input name='services' type='radio' value='1'>
             <label for='unsatisfied'>very unsatisfied</label>
             <p>How would you describe your satisfaction with our staff?</p>
             <label for='satisfied'>very satisfied</label>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
+            <input name='staff' type='radio' value='5'>
+            <input name='staff' type='radio' value='4'>
+            <input name='staff' type='radio' value='3'>
+            <input name='staff' type='radio' value='2'>
+            <input name='staff' type='radio' value='1'>
             <label for='unsatisfied'>very unsatisfied</label>
-            <p>How would you describe your satisfaction with our services?</p>
+            <p>How would you describe your satisfaction with our product?</p>
             <label for='satisfied'>very satisfied</label>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
+            <input name='product' type='radio' value='5'>
+            <input name='product' type='radio' value='4'>
+            <input name='product' type='radio' value='3'>
+            <input name='product' type='radio' value='2'>
+            <input name='product' type='radio' value='1'>
             <label for='unsatisfied'>very unsatisfied</label>
-            <p>How would you describe your satisfaction with our services?</p>
+            <p>How would you describe your satisfaction with our marketing?</p>
             <label for='satisfied'>very satisfied</label>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
-            <input type='radio'>
+            <input name='marketing' type='radio' value='5'>
+            <input name='marketing' type='radio' value='4'>
+            <input name='marketing' type='radio' value='3'>
+            <input name='marketing' type='radio' value='2'>
+            <input name='marketing' type='radio' value='1'>
             <label for='unsatisfied'>very unsatisfied</label>
         </fieldset>
         <fieldset>
             <p>Would you reccomend our services?</p>
             <label for='yes'>Yes</label>
-            <input type='checkbox'>
+            <input type='radio' name='reccomend' value='yes'>
             <label for='yes'>Maybe</label>
-            <input type='checkbox'>
+            <input type='radio' name='reccomend' value='maybe'>
             <label for='yes'>Unsure</label>
-            <input type='checkbox'>
+            <input type='radio' name='reccomend' value='unsure'>
             <label for='yes'>No</label>
-            <input type='checkbox'>
+            <input type='radio' name='reccomend' value='no'>
+        </fieldset>
+        <fieldset>
+            <p>Where did you learn about our product?</p>
+            <p>Choose all options that apply:</p>
+            <br>
+            <label for='social media'>Social media</label>
+            <input type='checkbox' name='option1' value='social media'>
+            <br>
+            <label for='internet'>Internet add</label>
+            <input type='checkbox' name='option2' value='internet add'>
+            <br>
+            <label for='tv'>Tv</label>
+            <input type='checkbox' name='option3' value='tv'>
+            <br>
+            <label for='radio'>Radio</label>
+            <input type='checkbox' name='option4' value='radio'>
+            <br>
+            <label for='friends'>Friends/family</label>
+            <input type='checkbox' name='option5' value='friends family'>
+            <br>
+            <label for='other'>Other</label>
+            <input type='checkbox' name='option6' value='other'>
+            <br>
+            <label for='other-specify'>Where?</label>
+            <input type='text' name='other-specify'>
         </fieldset>
         <div>Comments:</div>
         <div><textarea id='comments' placeholder='Please write your comments here'></textarea></div>

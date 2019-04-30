@@ -10,108 +10,113 @@
 </head>
 
 <body>
-    <h1 id='title'>Hello and welcome!</h1>
-    <p id='description'>The purpose of this survey is to learn your opinion on our services. </p>
-    <form ids='survey-form'>
-        <fieldset>
-            <label for='name'>Your Name:</label>
-            <input id="name" name='name' type='text'>
-            <br>
-            <label for="email">Your e-mail:</label>
-            <input id="email" name='email' type='email'>
-            <br>
-            <label for='age'>Your age:</label>
-            <input id='age' name='age' type='number' min='18'>
-            <br>
-            <label for='ocupation'>Your ocupation</label>
-            <br>
-            <select name='ocupation'>
-                <option value='working full-time'>Working Full-time</option>
-                <option value='working part-time'>Working Part-time</option>
-                <option value='unemployed'>Unemployed</option>
-                <option value='retired'>Retired</option>
-                <option value='full-time student'>Full-time student</option>
-                <option value='part-time student'>Part-time student</option>
-                <option value='other'>Other</option>
-            </select>
-            <br>
-            <label for='other'>If other please specify:</label>
-            <input id='ocupation-other' name='ocupation-other' type='text'>
-        </fieldset>
-        <fieldset>
-            <p>How would you describe your satisfaction with our services?</p>
-            <label for='satisfied'>very satisfied</label>
-            <input name='services' type='radio' value='5'>
-            <input name='services' type='radio' value='4'>
-            <input name='services' type='radio' value='3'>
-            <input name='services' type='radio' value='2'>
-            <input name='services' type='radio' value='1'>
-            <label for='unsatisfied'>very unsatisfied</label>
-            <p>How would you describe your satisfaction with our staff?</p>
-            <label for='satisfied'>very satisfied</label>
-            <input name='staff' type='radio' value='5'>
-            <input name='staff' type='radio' value='4'>
-            <input name='staff' type='radio' value='3'>
-            <input name='staff' type='radio' value='2'>
-            <input name='staff' type='radio' value='1'>
-            <label for='unsatisfied'>very unsatisfied</label>
-            <p>How would you describe your satisfaction with our product?</p>
-            <label for='satisfied'>very satisfied</label>
-            <input name='product' type='radio' value='5'>
-            <input name='product' type='radio' value='4'>
-            <input name='product' type='radio' value='3'>
-            <input name='product' type='radio' value='2'>
-            <input name='product' type='radio' value='1'>
-            <label for='unsatisfied'>very unsatisfied</label>
-            <p>How would you describe your satisfaction with our marketing?</p>
-            <label for='satisfied'>very satisfied</label>
-            <input name='marketing' type='radio' value='5'>
-            <input name='marketing' type='radio' value='4'>
-            <input name='marketing' type='radio' value='3'>
-            <input name='marketing' type='radio' value='2'>
-            <input name='marketing' type='radio' value='1'>
-            <label for='unsatisfied'>very unsatisfied</label>
-        </fieldset>
-        <fieldset>
-            <p>Would you reccomend our services?</p>
-            <label for='yes'>Yes</label>
-            <input type='radio' name='reccomend' value='yes'>
-            <label for='yes'>Maybe</label>
-            <input type='radio' name='reccomend' value='maybe'>
-            <label for='yes'>Unsure</label>
-            <input type='radio' name='reccomend' value='unsure'>
-            <label for='yes'>No</label>
-            <input type='radio' name='reccomend' value='no'>
-        </fieldset>
-        <fieldset>
-            <p>Where did you learn about our product?</p>
-            <p>Choose all options that apply:</p>
-            <br>
-            <label for='social media'>Social media</label>
-            <input type='checkbox' name='option1' value='social media'>
-            <br>
-            <label for='internet'>Internet add</label>
-            <input type='checkbox' name='option2' value='internet add'>
-            <br>
-            <label for='tv'>Tv</label>
-            <input type='checkbox' name='option3' value='tv'>
-            <br>
-            <label for='radio'>Radio</label>
-            <input type='checkbox' name='option4' value='radio'>
-            <br>
-            <label for='friends'>Friends/family</label>
-            <input type='checkbox' name='option5' value='friends family'>
-            <br>
-            <label for='other'>Other</label>
-            <input type='checkbox' name='option6' value='other'>
-            <br>
-            <label for='other-specify'>Where?</label>
-            <input type='text' name='other-specify'>
-        </fieldset>
-        <div>Comments:</div>
-        <div><textarea id='comments' placeholder='Please write your comments here'></textarea></div>
-        <div>
-            <button type='submit'>Submit</button></div>
+    <header>
+        <h1 id='title'>Hello and welcome!</h1>
+        <p id='description'>The purpose of this survey is to learn your opinion on our services. </p>
+    </header>
+    <main>
+        <form id='survey-form'>
+            <section id='demographic'>
+                <label for='name'>Your Name:</label>
+                <input id="name" name='name' type='text'>
+                <br>
+                <label for="email">Your e-mail:</label>
+                <input id="email" name='email' type='email'>
+                <br>
+                <label for='age'>Your age:</label>
+                <input id='age' name='age' type='number' min='18'>
+                <br>
+                <label for='ocupation'>Your ocupation</label>
+                <br>
+                <select name='ocupation'>
+                    <option value='working full-time'>Working Full-time</option>
+                    <option value='working part-time'>Working Part-time</option>
+                    <option value='unemployed'>Unemployed</option>
+                    <option value='retired'>Retired</option>
+                    <option value='full-time student'>Full-time student</option>
+                    <option value='part-time student'>Part-time student</option>
+                    <option value='other'>Other</option>
+                </select>
+                <br>
+                <label for='other'>If other please specify:</label>
+                <input id='ocupation-other' name='ocupation-other' type='text'>
+            </section>
+            <section id='satisfaction'>
+                <p>How would you describe your satisfaction with our services?</p>
+                <label for='satisfied'>very satisfied</label>
+                <input name='services' type='radio' value='5'>
+                <input name='services' type='radio' value='4'>
+                <input name='services' type='radio' value='3'>
+                <input name='services' type='radio' value='2'>
+                <input name='services' type='radio' value='1'>
+                <label for='unsatisfied'>very unsatisfied</label>
+                <p>How would you describe your satisfaction with our staff?</p>
+                <label for='satisfied'>very satisfied</label>
+                <input name='staff' type='radio' value='5'>
+                <input name='staff' type='radio' value='4'>
+                <input name='staff' type='radio' value='3'>
+                <input name='staff' type='radio' value='2'>
+                <input name='staff' type='radio' value='1'>
+                <label for='unsatisfied'>very unsatisfied</label>
+                <p>How would you describe your satisfaction with our product?</p>
+                <label for='satisfied'>very satisfied</label>
+                <input name='product' type='radio' value='5'>
+                <input name='product' type='radio' value='4'>
+                <input name='product' type='radio' value='3'>
+                <input name='product' type='radio' value='2'>
+                <input name='product' type='radio' value='1'>
+                <label for='unsatisfied'>very unsatisfied</label>
+                <p>How would you describe your satisfaction with our marketing?</p>
+                <label for='satisfied'>very satisfied</label>
+                <input name='marketing' type='radio' value='5'>
+                <input name='marketing' type='radio' value='4'>
+                <input name='marketing' type='radio' value='3'>
+                <input name='marketing' type='radio' value='2'>
+                <input name='marketing' type='radio' value='1'>
+                <label for='unsatisfied'>very unsatisfied</label>
+            </section>
+            <section id='reccomendation'>
+                <p>Would you reccomend our services?</p>
+                <label for='yes'>Yes</label>
+                <input type='radio' name='reccomend' value='yes'>
+                <label for='yes'>Maybe</label>
+                <input type='radio' name='reccomend' value='maybe'>
+                <label for='yes'>Unsure</label>
+                <input type='radio' name='reccomend' value='unsure'>
+                <label for='yes'>No</label>
+                <input type='radio' name='reccomend' value='no'>
+            </section>
+            <section id='marketing'>
+                <p>Where did you learn about our product?</p>
+                <p>Choose all options that apply:</p>
+                <label for='social media'>Social media</label>
+                <input type='checkbox' name='option1' value='social media'>
+                <br>
+                <label for='internet'>Internet add</label>
+                <input type='checkbox' name='option2' value='internet add'>
+                <br>
+                <label for='tv'>Tv</label>
+                <input type='checkbox' name='option3' value='tv'>
+                <br>
+                <label for='radio'>Radio</label>
+                <input type='checkbox' name='option4' value='radio'>
+                <br>
+                <label for='friends'>Friends/family</label>
+                <input type='checkbox' name='option5' value='friends family'>
+                <br>
+                <label for='other'>Other</label>
+                <input type='checkbox' name='option6' value='other'>
+                <br>
+                <label for='other-specify'>Where?</label>
+                <input type='text' name='other-specify'>
+            </section>
+            <section id='additional'>
+                <div>Comments:</div>
+                <div><textarea id='comments' placeholder='Please write your comments here'></textarea></div>
+                <div>
+                    <button type='submit'>Submit</button></div>
+            </section>
+    </main>
     </form>
 
 </html>

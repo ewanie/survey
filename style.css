@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #0fa766;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+
+}
+
+section {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+}

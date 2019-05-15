@@ -27,9 +27,45 @@ header h1 {
     margin: 15px;
 }
 
-
 section {
     background-color: #fff;
     width: 70%;
     margin: auto;
+}
+
+#demographic {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+#satisfaction {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+#satisfaction label {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+#reccomendation {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+#marketing {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+#additional {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+#additional textarea {
+    width: 30%;
+    height: 100px;
 }
